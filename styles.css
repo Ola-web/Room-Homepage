@@ -1,0 +1,411 @@
+:root {
+    --dark-gray: hsl(0, 0%, 63%);
+    --black-clr: hsl(0, 0%, 0%);
+    --white-clr: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+
+body {
+    font-size: 12px;
+    font-family: 'Spartan', sans-serif;
+    
+}
+
+.room {
+    width: 100vw;
+    height: 100vh;
+  
+    
+}
+.hamburger {
+    display: none;
+    height: 15px;
+    cursor: pointer;
+}
+.room__logo {
+    text-decoration: none;
+    color: var(--white-clr);
+    font-size: 20px;
+    font-weight: 600;
+    height:max-content;
+    display: flex;
+    
+}
+
+.room__nav {
+    height: max-content;
+    display: flex;
+    padding-top: 4px;
+
+}
+.room__nav-lists {
+    display: flex;
+   
+    list-style-type: none;
+    margin-left: 4em;
+}
+
+.room__nav-list {
+    margin-left: 3em;
+    font-weight: 500;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+.room__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "sideleft sideleft sideright";
+    height: 67%;
+    overflow: hidden;
+    position: relative;
+}
+
+.room__top-left {
+    grid-area: sideleft;
+   
+    background: url(images/desktop-image-hero-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: center center;
+
+    color: var(--white-clr);
+    padding: 3em 4em;
+    overflow: hidden;
+
+    display: flex;
+  
+}
+
+.room__top-left-second {
+    grid-area: sideleft;
+   
+    background: url(images/desktop-image-hero-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: center center;
+
+    color: var(--white-clr);
+    padding: 3em 4em;
+    overflow: hidden;
+
+    display: flex;
+    
+}
+
+.room__top-left-third {
+    grid-area: sideleft;
+   
+    background: url(images/desktop-image-hero-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: center center;
+
+    color: var(--white-clr);
+    padding: 3em 4em;
+    overflow: hidden;
+
+    display: flex;
+}
+
+.active {
+    border-bottom: 2px solid white;
+    width: 100%;
+}
+
+.fade {
+    animation: fade;
+    animation-duration: 1s;
+    
+}
+@keyframes fade {
+    0%  {
+        transform: translateX(-100%);
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+
+
+.room__top-right {
+    grid-area: sideright;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.room__headline {
+    font-size: 32px;
+    width: 75%;
+    margin-bottom: .8em;
+    
+}
+
+.room__sub-headline {
+    width: 75%;
+    opacity: .5;
+    line-height: 1.4;
+    color: gray;
+    margin-bottom: 2em;
+}
+
+.room__btn {
+    border: none;
+    outline: none;
+    font-size: inherit;
+    letter-spacing:10px;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.room__shop:hover {
+    opacity: .3;
+}
+
+
+.room__shop {
+    display: flex;
+    width: 75%;
+    display: block;
+}
+
+
+.icon {
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+
+.room__navigator {
+    align-self: flex-start;
+    
+    position: sticky;
+    top: 1200px;
+    margin-bottom: -4px;
+    cursor: pointer;   
+}
+
+
+
+.angle-left {
+    background-color: black;
+    padding: 1.9em;
+    margin-right: -5px;
+
+}
+
+.angle-left:hover, .angle-right:hover {
+    opacity: .3;
+    background-color: gray;
+}
+
+
+
+.angle-right {
+    background-color: black;
+    padding: 1.9em;
+}
+.room__bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+   
+    height: 33%;
+  
+}
+
+.room__bottom-left {
+    grid-column:  1 / 2;
+    background: url(images/image-about-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: center center;
+   
+  
+}
+
+.room__bottom-middle {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3.3em;
+    
+}
+
+.room__bottom-right {
+    grid-column: 3 / 4;
+    background: url(images/image-about-light.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    background-origin: center center;
+    
+}
+
+.room__bottom-headline {
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+}
+
+.room__bottom-sub-headline {
+    color: gray;
+    opacity: .5;
+    line-height: inherit;
+}
+
+.mySlides {
+    display: none;
+}
+
+@media (max-width: 823px) {
+  
+    .room__top {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    
+    }
+    .room__top-left, 
+    .room__top-left-second,
+    .room__top-left-third {
+     
+        grid-column: 1 / -1;
+        grid-row: 1 / - 1
+  
+    }
+    .room__top-right {
+       grid-row: 2 / 3;
+    }
+}
+
+@media (max-width: 780px) {
+    .room__bottom {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+      }
+
+      .room__bottom-left {
+        grid-column: span 3 ;
+        grid-row: 1 / 2;
+        height: 20vh;
+      }
+
+      .room__bottom-middle {
+         padding-top: 2em;
+         padding-bottom: 2em;
+         grid-row: 2 / 3;
+      
+      }
+
+      .room__bottom-right {
+        grid-column: span 2;
+        grid-row: 3 / 4;
+        height: 20vh;
+      }
+  
+    }
+
+    @media (max-width: 448px) {
+        .hamburger {
+            display: flex;
+        }
+        .room__nav-lists {
+            display: none;
+        }
+        .room__logo {
+            margin-top: -4px;
+            text-align: center;
+            transform: translateX(260%);
+        }
+
+       .room__navigator {
+           position: absolute;
+           top: 142px;
+           right: 0;
+           bottom: auto;
+           
+           
+       }
+
+       .room__navigator:hover {
+           background-color:#ccc;
+       }
+      
+    }
+
+    
+    .topnav {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        
+     }
+ 
+     .close {
+         height: 15px;
+         margin-left: 3em;
+         cursor: pointer;
+     }
+
+     
+ 
+     .topnav__lists {
+         list-style-type: none;
+         display: flex;
+         
+    
+         list-style-type: none;
+        
+         padding: 3em 3em;
+     }
+ 
+     .topnav__list {
+         margin-left: 2em;
+         font-weight: 500;
+         text-transform: lowercase;
+         cursor: pointer;
+         font-weight: 800;
+         font-size: 13px;
+     }
+
+     @media (max-width: 400px) {
+        .room__top-left {
+            background: url(images/mobile-image-hero-1.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-origin: center center;
+        }
+
+        .room__top-left-second {
+            background: url(images/mobile-image-hero-2.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-origin: center center;
+        }
+
+        .room__top-left-third {
+            background: url(images/mobile-image-hero-3.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-origin: center center;
+        }
+     }

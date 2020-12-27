@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Room homepage</title>
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="room">
+
+    <nav class="topnav" style="display: none;">
+      <img class="close" onclick="closeTop()" src="images/icon-close.svg" alt="">
+      <ul class="topnav__lists">
+        <li class="topnav__list">home</li>
+        <li class="topnav__list">shop</li>
+        <li class="topnav__list">about</li>
+        <li class="topnav__list">contact</li>
+      </ul>
+    </nav>
+
+    <section class="room__top mySlides fade">
+      <div id="top" class="room__top-left  dark width">
+        <img onclick="expand()" class="hamburger" src="images/icon-hamburger.svg" alt="">
+        <a href="#" class="room__logo">room</a>
+        <nav class="room__nav">
+          <ul class="room__nav-lists">
+            <li class="room__nav-list active">Home</li>
+            <li class="room__nav-list">Shop</li>
+            <li class="room__nav-list">About</li>
+            <li class="room__nav-list">Contact</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="room__top-right">
+        <h1 class="room__headline">Discover innovative ways to decorate</h1>
+        <p class="room__sub-headline">
+          We provide unmatched quality, comfort, and style for property owners across the country.
+          Our experts combine form and function in bringing your vision to life. Create a room in your
+          own style with our collection and make your property a reflection of you and what you love.
+        </p>
+        <div class="room__shop">
+          <button class="room__btn">Shop now</button>
+          <img class="icon" src="images/icon-arrow.svg" alt="">
+        </div>
+
+        <div class="room__navigator">
+          <img onclick="plusSlides(-1)" class="angle-left" src="images/icon-angle-left.svg" alt="">
+          <img onclick="plusSlides(1)" class="angle-right" src="images/icon-angle-right.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="room__top mySlides fade">
+      <div class="room__top-left-second width">
+        <img onclick="expand()" class="hamburger" src="images/icon-hamburger.svg" alt="">
+        <nav class="room__nav">
+          <a style="margin-top: -10px;" href="#" class="room__logo">room</a>
+          <ul class="room__nav-lists">
+            <li class="room__nav-list active">Home</li>
+            <li class="room__nav-list">Shop</li>
+            <li class="room__nav-list">About</li>
+            <li class="room__nav-list">Contact</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="room__top-right">
+        <h1 class="room__headline">We are available all across the globe</h1>
+        <p class="room__sub-headline">
+
+          With stores all over the world, it's easy for you to find furniture for your home or place of business.
+          Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+          store locator. Any questions? Don't hesitate to contact us today.
+        </p>
+        <div class="room__shop">
+          <button class="room__btn">Shop now</button>
+          <img class="icon" src="images/icon-arrow.svg" alt="">
+        </div>
+
+        <div class="room__navigator">
+          <img onclick="plusSlides(-1)" class="angle-left" src="images/icon-angle-left.svg" alt="">
+          <img onclick="plusSlides(1)" class="angle-right" src="images/icon-angle-right.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="room__top mySlides fade">
+      <div class="room__top-left-third width">
+        <img class="hamburger" onclick="expand()" src="images/icon-hamburger.svg" alt="">
+        <nav class="room__nav">
+          <a style="margin-top: -10px;" href="#" class="room__logo">room</a>
+          <ul class="room__nav-lists">
+            <li class="room__nav-list active">Home</li>
+            <li class="room__nav-list">Shop</li>
+            <li class="room__nav-list">About</li>
+            <li class="room__nav-list">Contact</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="room__top-right">
+        <h1 class="room__headline">Manufactured with the best materials</h1>
+        <p class="room__sub-headline">
+          Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
+          to ensure that every product is made as perfect and as consistent as possible. With three decades of
+          experience in this industry, we understand what customers want for their home and office.
+        </p>
+        <div class="room__shop">
+          <button class="room__btn">Shop now</button>
+          <img class="icon" src="images/icon-arrow.svg" alt="">
+        </div>
+
+        <div class="room__navigator">
+          <img onclick="plusSlides(-1)" class="angle-left" src="images/icon-angle-left.svg" alt="">
+          <img onclick="plusSlides(1)" class="angle-right" src="images/icon-angle-right.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+
+    <section class="room__bottom">
+      <div class="room__bottom-left"></div>
+      <div class="room__bottom-middle">
+        <h3 class="room__bottom-headline">About our furniture</h3>
+        <p class="room__bottom-sub-headline">
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+      <div class="room__bottom-right"></div>
+    </section>
+  </main>
+
+</body>
+
+</html>
